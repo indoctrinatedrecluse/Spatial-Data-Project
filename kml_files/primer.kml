@@ -1,59 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.0">
-<Document>
-<Style id="z1">
-<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
-</Style>
-<Placemark><name>Waterwork 1</name>
-<description>Generation Fountains</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.283224,34.022217</coordinates></Point>
-</Placemark>
-<Placemark><name>Waterwork 2</name>
-<description>Gerontology Center Fountain</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.290489,34.020105</coordinates></Point>
-</Placemark>
-<Placemark><name>Waterwork 3</name>
-<description>Carolyn Craig and Franklin Library Garden And Fountain</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.283433,34.020490</coordinates></Point>
-</Placemark>
-<Placemark><name>Waterwork 4</name>
-<description>Prentiss Memorial Fountain</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.284581,34.020566</coordinates></Point>
-</Placemark>
-<Placemark><name>Waterwork 5</name>
-<description>Patsy and Forrest Shumway Fountain</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.285171,34.020195</coordinates></Point>
-</Placemark>
-<Placemark><name>Waterwork 6</name>
-<description>Fred and Evelyn Moorman Brunkow Fountain</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.286145,34.020411</coordinates></Point>
-</Placemark>
-<Placemark><name>Library 1</name>
-<description>Leavey Library</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.282872,34.021757</coordinates></Point>
-</Placemark>
-<Placemark><name>Library 2</name>
-<description>Edward L Doheny Jr Memorial Library</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.283638,34.020145</coordinates></Point>
-</Placemark>
-<Placemark><name>Library 3</name>
-<description>Leventhal School of Accounting Library</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.285632,34.019147</coordinates></Point>
-</Placemark>
-<Placemark><name>Library 4</name>
-<description>Gaughan and Tiberti Library</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.282465,34.018689</coordinates></Point>
-</Placemark>
-<Placemark><name>Library 5</name>
-<description>Laufer Library</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.287609,34.020017</coordinates></Point>
-</Placemark>
-<Placemark><name>Library 6</name>
-<description>Seaver Science Library</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.288718,34.019547</coordinates></Point>
-</Placemark>
-<Placemark><name>Apartment</name>
-<description>1296 West Jefferson Boulevard</description>
-<styleUrl>#z1</styleUrl><Point><coordinates>-118.29455528692928,34.02537147821391</coordinates></Point>
-</Placemark>
-</Document></kml>
+    <Document>
+        <Style id="z1">
+            <IconStyle>
+                <Icon>
+                    <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Folder>
+            <name>Waterworks</name>
+            <Placemark>
+                <name>Waterwork 1</name>
+                <description>Generation Fountains</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.283224,34.022217</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Waterwork 2</name>
+                <description>Gerontology Center Fountain</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.290489,34.020105</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Waterwork 3</name>
+                <description>Carolyn Craig and Franklin Library Garden And Fountain</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.283433,34.020490</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Waterwork 4</name>
+                <description>Prentiss Memorial Fountain</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.284581,34.020566</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Waterwork 5</name>
+                <description>Patsy and Forrest Shumway Fountain</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.285171,34.020195</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Waterwork 6</name>
+                <description>Fred and Evelyn Moorman Brunkow Fountain</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.286145,34.020411</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>Libraries</name>
+            <Placemark>
+                <name>Library 1</name>
+                <description>Leavey Library</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.282872,34.021757</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Library 2</name>
+                <description>Edward L Doheny Jr Memorial Library</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.283638,34.020145</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Library 3</name>
+                <description>Leventhal School of Accounting Library</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.285632,34.019147</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Library 4</name>
+                <description>Gaughan and Tiberti Library</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.282465,34.018689</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Library 5</name>
+                <description>Laufer Library</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.287609,34.020017</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Library 6</name>
+                <description>Seaver Science Library</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.288718,34.019547</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+        <Folder>
+            <name>Apartment</name>
+            <Placemark>
+                <name>Apartment</name>
+                <description>1296 West Jefferson Boulevard</description>
+                <styleUrl>#z1</styleUrl>
+                <Point>
+                    <coordinates>-118.29455528692928,34.02537147821391</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>

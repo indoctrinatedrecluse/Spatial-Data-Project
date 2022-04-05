@@ -1,0 +1,1 @@
+The "highlights.kml" file is basically the "primer.kml" file (which contains only the point coords separated by layers) along with the convex hull, nearest neighbour and centroid.

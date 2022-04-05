@@ -1,0 +1,2 @@
+The "queries.sql" file contains the necessary queries to be run in PostGRESql+PostGIS. The shapefiles provided as "primer_shapefiles" need to be imported via the PostGIS Shapefile Import/Export Tool as tables, post which the queries can be run as is and the KML generated may be directly pasted and employed.
+The screenshots via Google Earth occupy the "screenshots" folder.
