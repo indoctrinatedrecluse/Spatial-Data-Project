@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>OL</title>
+<script src="https://openlayers.org/api/OpenLayers.js">
+</script>
+<style>
+#map {
+    width:400px;
+    height:400px;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+
+<script>
+// storing the geodata as a json object
+var geodata = {"geodata":[{"lat":34.022217, "long":-118.283224, label:"Waterwork 1"},
+                          {"lat":34.020105, "long":-118.290489, label:"Waterwork 2"},
+                          {"lat":34.020490, "long":-118.283433, label:"Waterwork 3"},
+                          {"lat":34.020566, "long":-118.284581, label:"Waterwork 4"},
+                          {"lat":34.020195, "long":-118.285171, label:"Waterwork 5"},
+                          {"lat":34.020411, "long":-118.286145, label:"Waterwork 6"},
+                          {"lat":34.021757, "long":-118.282872, label:"Library 1"},
+                          {"lat":34.020145, "long":-118.283638, label:"Library 2"},
+                          {"lat":34.019147, "long":-118.285632, label:"Library 3"},
+                          {"lat":34.018689, "long":-118.282465, label:"Library 4"},
+                          {"lat":34.020017, "long":-118.287609, label:"Library 5"},
+                          {"lat":34.019547, "long":-118.288718, label:"Library 6"},
+                          {"lat":34.02537147821391, "long":-118.29455528692928, label:"Apartment"}]};
+localStorage.setItem("geodata",JSON.stringify(geodata));
+
+
+// fetching the locally stored data in the browser cache
+var dataStored = JSON.parse(localStorage.getItem("geodata"));
+// verify that we fetched our data correctly
+console.log(dataStored); 
+// we can iterate through our array [of points], like so:
+var coords = dataStored.geodata; // coords will contain our array
+for(var index in coords) { // index is 0,1,2...
+  console.log(coords[index]); // print the points in the console log (thirteen in total)
+}
+
+// initializing the map layers
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+}// initMap()
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                map.getProjectionObject() // to Spherical Mercator Projection
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat,18); // second arg is zoom level
+        //console.log(latitude + ", " + longitude);
+}// addMarker()
+
+
+// load and setup map layers
+initMap();
+
+// loop through the points and add markers
+for (var index in coords) {
+    addMarker(coords[index].lat, coords[index].long);
+}
+
+</script>
+
+</body>
+
+</html>
